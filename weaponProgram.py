@@ -3,7 +3,7 @@ import csv
 
 
 '''
-- Craete a program that will read the contents of the file 'weapons.txt'. Each record in the file represents the specs to a weapon.
+- Create a program that will read the contents of the file 'weapons.txt'. Each record in the file represents the specs to a weapon.
 - Create an instance of the weapon object for each record. 
 - Create a dictionary that will contain the name of the weapon as the key and the number of bullets as the value. 
 - Print out details of each weapon using the object's methods only (as per comments below). 
@@ -14,25 +14,25 @@ HINT: Follow the comments for each line to help with the logic of the problem.
 '''
 
 
-# create a file object to open the file in read mode
+#Create a file object to open the file in read mode
 
 
 
-# create a csv object from the file object
+#Create a csv object from the file object
 
 
 
-#skip the header row
-
-
-
-
-#create an empty dictionary named 'weapons_dict'
+#Skip the header row
 
 
 
 
-#use a for loop to iterate through every row of the csv file
+#Create an empty dictionary named 'weapons_dict'
+
+
+
+
+#Use a for loop to iterate through every row of the csv file
 
     #use variables for name,speed and range (optional)
     
