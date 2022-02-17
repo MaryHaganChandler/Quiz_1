@@ -24,6 +24,7 @@ the attribute 'status' to 'Inactive'
 '''
 
 class WeaponClass:
+    #Create __init__ method.
     def __init__(self, name, speed, weapon_range):
         self.__name = name
         self.__bullets = 0
@@ -31,11 +32,11 @@ class WeaponClass:
         self.__range = weapon_range
         self.__status = "Active"
 
-    #Do we need to create a set method for each one?
-
+    #Set bullet count to a random number between 10 and 100,000.
     def bullet_count(self):
-        self.__bullets = random.randint(10,1000)
-###########################CHANGE BACK TO 100000
+        self.__bullets = random.randint(10,100000)
+
+    #Fire bullets and decrease by 1 bullet each time the method is called.
     def fire_bullet(self):
         self.__bullets -= 1
         #if self.__bullets > 0:
