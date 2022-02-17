@@ -34,14 +34,15 @@ class WeaponClass:
     #Do we need to create a set method for each one?
 
     def bullet_count(self):
-        self.__bullets = random.randint(10,100000)
-
+        self.__bullets = random.randint(10,1000)
+###########################CHANGE BACK TO 100000
     def fire_bullet(self):
-        if self.__bullets > 0:
-            self.__bullets -= 1
-            self.__status = "Active"
-        else:
-            self.__status = "Inactive"
+        self.__bullets -= 1
+        #if self.__bullets > 0:
+        #    self.__bullets -= 1
+        #    self.__status = "Active"
+        #else:
+        #    self.__status = "Inactive"
 
 
     #Accessor methods
