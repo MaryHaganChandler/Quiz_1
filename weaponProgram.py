@@ -49,8 +49,8 @@ for row in weapon_file:
 
 
     # append the name and bullet count to 'weapons_dict'
-    weapons_dict["name"] = name
-    weapons_dict["get_bullets"] = weapon.get_bullets()
+    weapons_dict["Name:\t\t"] = name
+    weapons_dict["Bullet count:\t"] = weapon.get_bullets()
         #weapon.get_name(), weapon.get_bullets()]
 
 
@@ -86,4 +86,4 @@ for row in weapon_file:
 #Using a loop, print out the name and number of bullets from the dictionary.
 
 for i, j in weapons_dict.items():
-    print(i, ": ", j)
+    print(i, j)
