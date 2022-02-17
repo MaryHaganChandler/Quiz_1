@@ -67,12 +67,14 @@ for row in weapon_file:
     
 
     # use an appropriate loop to keep firing the weapon until all bullets run out
-    
+    bullets = weapon.get_bullets()
+    while bullets > 0:
         # call the appropriate method to fire a bullet
-    weapon.fire_bullet()
+        weapon.fire_bullet()
         # print out the bullet count every time the weapon is fired
-    #print(weapon.bullet_count(), end = "\r")
-    print(weapon.get_bullets(), end = "\r")
+        print(weapon.get_bullets(), end = "\r")
+        #print(weapon.bullet_count(), end = "\r")
+    
 
     
 
