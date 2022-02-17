@@ -39,7 +39,7 @@ for row in weapon_file:
     #use variables for name, speed, and range (optional)
     name = row[0]
     speed = row[1]
-    weapon_range = [2]
+    weapon_range = row[2]
 
     # create an instance of the weapon object using the
     # specs from the csv file (name, speed, and range)
@@ -59,7 +59,7 @@ for row in weapon_file:
     print(weapon.get_range())
 
     # print out the number of bullets of the weapon using the appropriate method of the object
-    print(weapon.bullet_count())
+    print(weapon.get_bullets())
 
 
     #use an input statement to halt the program and wait for the user - 
@@ -67,11 +67,12 @@ for row in weapon_file:
     
 
     # use an appropriate loop to keep firing the weapon until all bullets run out
-
+    
         # call the appropriate method to fire a bullet
-    weapon.fire_bullet(weapon.bullet_count())
+    weapon.fire_bullet()
         # print out the bullet count every time the weapon is fired
-    print(weapon.bullet_count())
+    #print(weapon.bullet_count(), end = "\r")
+    print(weapon.get_bullets(), end = "\r")
 
     
 

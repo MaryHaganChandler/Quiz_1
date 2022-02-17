@@ -36,7 +36,7 @@ class WeaponClass:
     def bullet_count(self):
         self.__bullets = random.randint(10,100000)
 
-    def fire_bullet(self, bullets):
+    def fire_bullet(self):
         if self.__bullets > 0:
             self.__bullets -= 1
             self.__status = "Active"
